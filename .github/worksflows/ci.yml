@@ -32,6 +32,12 @@ jobs:
     # Default: 360 minutes
     timeout-minutes: 60
 
+#    strategy:
+      # When set to true, cancel all in-progress jobs if any matrix job fails.
+#      fail-fast: false
+#      matrix:
+#        release: [14.04, 16.04, 18.04, 20.04]
+
     steps:
       - name: git checkout packging project
         uses: actions/checkout@v1
